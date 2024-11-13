@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padel Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .chatbot-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .input-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        #question {
+            flex: 1;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        #response {
+            font-size: 1em;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            min-height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="chatbot-container">
+    <h1>Padel Regel Chatbot</h1>
+    <div class="input-container">
+        <input type="text" id="question" placeholder="Skriv inn spørsmålet ditt" size="50">
+        <button onclick="askQuestion()">Spør</button>
+    </div>
+    <p id="response">Svaret vil vises her...</p>
+</div>
+
+<script>
+    async function askQuestion() {
+        const question = document.getElementById("question").value;
+        const responseElement = document.getElementById("response");
+
+        // Tøm svarfeltet mens vi venter på det nye svaret
+        responseElement.textContent = "Laster svar...";
+
+        try {
+            const response = await fetch("/ask", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ question })
+            });
+
+            const result = await response.json();
+            responseElement.textContent = result.answer;
+        } catch (error) {
+            responseElement.textContent = "Beklager, det oppsto en feil. Prøv igjen senere.";
+        }
+    }
+</script>
+
+</body>
+</html>

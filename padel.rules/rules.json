@@ -1,0 +1,149 @@
+[
+    {
+        "intent": "Poengsystem-Generelt",
+        "keywords": ["poeng", "telle", "poengsystem"],
+        "responses": [
+            "Padel bruker samme poengsystem som tennis, altså 15, 30, 40, og game."
+        ]
+    },
+    {
+        "intent": "Poengsystem-Settvinst",
+        "keywords": ["games", "vinne", "sett"],
+        "responses": [
+            "Et sett vinnes ved å ha seks games med minst to games mer enn motstanderen."
+        ]
+    },
+    {
+        "intent": "Poengsystem-Tiebreak",
+        "keywords": ["tiebreak", "lik poengstilling", "6-6"],
+        "responses": [
+            "Ved stillingen 6–6 i games spilles et tiebreak for å avgjøre settet."
+        ]
+    },
+    {
+        "intent": "Poengsystem-Kampformat",
+        "keywords": ["sett", "padelkamp", "best av"],
+        "responses": [
+            "En kamp kan være best av 3 eller best av 5 sett, avhengig av turneringsformat."
+        ]
+    },
+    {
+        "intent": "Serve-Regler-Start",
+        "keywords": ["serve", "starte"],
+        "responses": [
+            "Første serve starter fra høyre side av banen og må slås diagonalt til motstanderens serverute."
+        ]
+    },
+    {
+        "intent": "Serve-Regler-Gyldig",
+        "keywords": ["serve", "gyldig", "utføres", "regler"],
+        "responses": [
+            "Serven må utføres som en underarmsserve, og ballen må treffe bakken først. Serveren kan ikke treffe ballen over hoftehøyde."
+        ]
+    },
+    {
+        "intent": "Serve-Regler-Feilserve",
+        "keywords": ["feilserve", "bom", "forsøk"],
+        "responses": [
+            "Du har to forsøk på å få serven riktig. Feilserve på begge forsøk gir poeng til motstanderen."
+        ]
+    },
+    {
+        "intent": "Serve-Regler-Let",
+        "keywords": ["let", "ny serve", "nett"],
+        "responses": [
+            "Hvis ballen treffer nettet og lander riktig i serveruten, får spilleren ny serve."
+        ]
+    },
+    {
+        "intent": "Serve-Regler-Sidegjerde",
+        "keywords": ["sidegjerdet", "serve"],
+        "responses": [
+            "Nei, serven må lande i bakken og kan deretter treffe glassveggen, men ikke sidegjerdet."
+        ]
+    },
+    {
+        "intent": "Ballsprett-Enkel",
+        "keywords": ["ballen", "sprette"],
+        "responses": [
+            "Ballen kan kun sprette én gang på hver side."
+        ]
+    },
+    {
+        "intent": "Ballsprett-Egen-Vegg",
+        "keywords": ["egen vegg", "slå ballen", "glassveggen"],
+        "responses": [
+            "Ja, du kan slå ballen i glassveggen på din egen side før den går over til motstanderens halvdel."
+        ]
+    },
+    {
+        "intent": "Ballsprett-Ut-Banen",
+        "keywords": ["ballen", "ut av banen", "smash"],
+        "responses": [
+            "Ballen kan smashes ut av banen, og motstanderen har lov til å løpe ut for å returnere den."
+        ]
+    },
+    {
+        "intent": "Ballsprett-Dobbel-Treff",
+        "keywords": ["dobbel treff", "slå ballen flere ganger"],
+        "responses": [
+            "Nei, spilleren kan ikke berøre ballen to ganger under samme slag."
+        ]
+    },
+    {
+        "intent": "Nett-Kontakt",
+        "keywords": ["nette", "berøre"],
+        "responses": [
+            "Nei, du kan ikke berøre nettet, stolpene eller nettet med kroppen eller rackerten mens ballen er i spill."
+        ]
+    },
+    {
+        "intent": "Midtlinje-Kryss",
+        "keywords": ["midtlinje", "krysse"],
+        "responses": [
+            "Nei, du kan ikke krysse midtlinjen, med mindre du går ut av banen for å hente en ball som har gått ut etter en smash."
+        ]
+    },
+    {
+        "intent": "Sidebytte",
+        "keywords": ["sidebytte", "bytte side"],
+        "responses": [
+            "Spillerne bytter side etter hvert partall av games (2, 4, 6 osv.) i et sett."
+        ]
+    },
+    {
+        "intent": "Pause-Mellom-Settene",
+        "keywords": ["pause", "settene"],
+        "responses": [
+            "Det er vanligvis en kort pause mellom hvert game og en lengre pause mellom settene, avhengig av turneringsreglene."
+        ]
+    },
+    {
+        "intent": "Ballen-På-Linjen",
+        "keywords": ["linjen", "inne"],
+        "responses": [
+            "Hvis ballen lander på linjen, regnes den som inne."
+        ]
+    },
+    {
+        "intent": "Ballen-På-Gjerdet",
+        "keywords": ["gjerdet", "treffer"],
+        "responses": [
+            "Hvis ballen treffer gjerde etter bakken på motstanderens side, er ballen ute."
+        ]
+    },
+    {
+        "intent": "Spesielle-Situasjoner-Forstyrrelse",
+        "keywords": ["forstyrrelse", "stoppe spillet"],
+        "responses": [
+            "Ja, hvis begge lag er enige om at noe forstyrrer spillet, kan de stoppe poenget og spille det på nytt."
+        ]
+    },
+    {
+        "intent": "Spesielle-Situasjoner-Tiebreak",
+        "keywords": ["tiebreak"],
+        "responses": [
+            "I tiebreak bytter serveren etter hvert poeng, og man spiller til 7 poeng med to poengs margin for å vinne."
+        ]
+    }
+]
